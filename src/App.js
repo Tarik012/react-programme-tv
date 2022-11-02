@@ -13,6 +13,7 @@ function App() {
         return (
           <div className="section-container">
             <Section
+              className="section"
               heure={item.time}
               titre={item.title}
               type={item.type}

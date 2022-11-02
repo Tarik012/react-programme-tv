@@ -1,15 +1,20 @@
-const Section = ({ heure, titre, type, duree, image, direct }) => {
+import Picture from "./Picture";
+import Description from "./Description";
+
+const Section = ({ heure, titre, type, duree, image, direct, className }) => {
   return (
     <>
       <div>
         <p>{heure}</p>
       </div>
-      <div>
-        <img src={image} alt="image programme"></img>
-        <p>{titre}</p>
-        <p>{type}</p>
-        <p>{duree}</p>
-        <p>{direct && "true"}</p>
+      <div className={className}>
+        <Picture image={image} />
+        <Description
+          titre={titre}
+          type={type}
+          duree={duree}
+          direct={direct && "true"}
+        />
       </div>
     </>
   );
