@@ -1,7 +1,12 @@
 import logo from "./assets/images/logo.jpeg";
 
 const Header = (props) => {
-  return <imp src={logo} alt="logo M6"></imp>;
+  return (
+    <>
+      <img src={logo} alt="logo M6"></img>
+      <p>M6</p>
+    </>
+  );
 };
 
 export default Header;
